@@ -41,7 +41,6 @@ board = cv2.aruco.CharucoBoard_create(10, 14, 0.018, 0.012, dictionary)
 # board = cv2.aruco.CharucoBoard_create(32, 28, 0.032, 0.024, dictionary)
 
 charuco_board_d = {i: corner for i, corner in enumerate(board.chessboardCorners)}
-print charuco_board_d
 
 capture = cv2.VideoCapture(0)
 capture.set(cv2.CAP_PROP_FRAME_WIDTH, FRAME_WIDTH)
