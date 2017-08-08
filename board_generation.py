@@ -1,7 +1,4 @@
 import cv2.aruco
-import pickle
-import io
-import time
 
 dictionary = cv2.aruco.getPredefinedDictionary(cv2.aruco.DICT_5X5_1000)
 board = cv2.aruco.CharucoBoard_create(32, 28, 0.032, 0.024, dictionary)
