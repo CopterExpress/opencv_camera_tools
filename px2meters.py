@@ -1,6 +1,6 @@
 import math
 
-class CameraModel:
+class CameraModel(object):
     def __init__(self, frame_width, frame_height, field_of_view_x, camera_matrix, dist_coeffs, new_camera_matrix):
         self.frame_width = frame_width
         self.frame_height = frame_height
