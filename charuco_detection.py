@@ -1,8 +1,12 @@
-import cv2.aruco
-import numpy as np
+from __future__ import division
+
 import math
 from itertools import izip
+import cv2.aruco
+import numpy as np
+
 from px2meters import CameraModel
+
 
 FRAME_WIDTH = 2592
 FRAME_HEIGHT = 1944
