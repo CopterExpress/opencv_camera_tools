@@ -27,8 +27,6 @@ DIST_COEFFS = np.array([[  2.15356885e-01,  -1.17472846e-01,  -3.06197672e-04,
                            0.00000000e+00,   0.00000000e+00]])
 
 camera_matrix = ORIG_CAMERA_MATRIX * FRAME_WIDTH / ORIG_CAMERA_WIDTH
-camera_matrix[0, 2] = ORIG_CAMERA_MATRIX[0, 2] * FRAME_HEIGHT / ORIG_CAMERA_HEIGHT
-camera_matrix[1, 2] = ORIG_CAMERA_MATRIX[1, 2] * FRAME_HEIGHT / ORIG_CAMERA_HEIGHT
 camera_matrix[2, 2] = 1.0
 
 new_camera_matrix, roi = cv2.getOptimalNewCameraMatrix(camera_matrix,
